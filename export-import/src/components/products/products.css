@@ -1,0 +1,10 @@
+.grey__area {
+    background-color: hsl(0, 0%, 88%);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 2rem 0;
+    text-align: center;
+
+}
+

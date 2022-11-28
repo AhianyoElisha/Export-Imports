@@ -1,0 +1,73 @@
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__img {
+    width: 350px;
+    border-radius: .3rem;
+    justify-self: center;
+}
+
+.about__title {
+    font-size: 1.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.about__list {
+    margin-bottom: 2rem;
+}
+
+.about__item {
+    list-style: none;
+    margin: .5rem 0;
+    font-weight: var(--font-normal);
+}
+
+.about__item::before {
+    content: "\2022";
+    color: var(--main-color);
+    font-weight: var(--font-semi-bold);
+    display: inline-block;
+    width: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.about__data {
+    max-width: 450px;
+}
+
+.about__description {
+    font-weight: var(--font-medium);
+}
+
+
+/* ====================== BREAKPOINTS ======================== */
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+.about__data {
+        margin: auto;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px){
+    .section {
+        padding: 2rem 0 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px){
+    
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px){
+
+  }
