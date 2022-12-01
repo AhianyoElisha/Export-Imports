@@ -20,7 +20,7 @@ const Exports = () => {
           </div>
         </div>
         <div className="export__data">
-          <h2 className="export__title">Welcome to Mange Exports <i className="uil uil-arrow-right"></i></h2>
+          <a href='#' className="export__title">Welcome to Mange Exports <i className="uil uil -arrow-right"></i></a>
           <h1 className="export__subtitle">We supply products for your consumption</h1>
           <p className="export__description">Providing full range of high quality services</p>
           <div className="export__label">

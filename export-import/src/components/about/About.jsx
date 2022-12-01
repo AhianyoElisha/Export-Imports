@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutImg from "../../assets/about.png"
 import "./about.css"
+import ScrollReveal from "scrollreveal"
 const About = () => {
+  // useEffect(() => {
+  //   const sr = ScrollReveal({
+  //     origin: "top",
+  //     distance: "60px",
+  //     duration: "2500",
+  //     delay: "400",
+  //     reset: true
+  //   });
+  //   sr.reveal(`.about__img`)
+  // }, []);
+  
   return (
     <section className="about section" id="about">
-      <div className="center__header">
-        <h2 className="section__title">About Us</h2>
-      </div>
+        <h2 className="section__title about__title_animate">About Us</h2>
       <div className="about__container container grid">
         <img src={AboutImg}  className="about__img" alt="" />
         <div className="about__data">

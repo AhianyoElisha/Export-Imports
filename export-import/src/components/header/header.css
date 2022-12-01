@@ -3,7 +3,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     z-index: var(--z-fixed);
 }
 
@@ -47,6 +47,11 @@ header {
     color: var(--main-color);
 }
 
+/* Change background header */
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
+}
+
 
 
 /* ====================== BREAKPOINTS ======================== */
@@ -86,7 +91,7 @@ header {
     }
     .nav__list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 

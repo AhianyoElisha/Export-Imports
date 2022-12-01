@@ -18,20 +18,5 @@ export const Data = [
         image: feature3,
         title: "Pear",
         location: "Ghana"
-    },{
-        id: 4,
-        image: feature1,
-        title: "Mango",
-        location: "Ghana"
-    },{
-        id: 5,
-        image: feature1,
-        title: "Mango",
-        location: "Ghana"
-    },{
-        id: 6,
-        image: feature1,
-        title: "Mango",
-        location: "Ghana"
     }
 ]

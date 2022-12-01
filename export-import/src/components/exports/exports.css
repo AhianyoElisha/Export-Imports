@@ -1,13 +1,14 @@
 .export__container {
     grid-template-columns: repeat(2,1fr);
+    padding: 5rem 0;
 }
 
 .image__stack {
     position: relative;
-    max-width: 350px;
+    width: 350px;
 }
 .export__img {
-    max-width: 350px;
+    max-width: 100%;
 }
 .image__hero {
     position: absolute;
@@ -99,11 +100,21 @@
     .export__label {
         margin-left: 0;
     }
+    .image__stack {
+        width: inherit;
+    }
+    .export__img {
+        max-width: 100%;
+    }
+    .image__hero {
+        width: inherit;
+    }
+    
+    .export__label {
+        width: inherit;
+    }
   }
   
   /* For small devices */
   @media screen and (max-width: 350px){
-    .export__data {
-        margin-left: -.3rem;
-    }
   }

@@ -1,25 +1,65 @@
 import React from 'react'
-import Data from "./Data"
+import { Data } from "./Data"
 import "./products.css"
+import { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
+
 
 const Products = () => {
   return (
-    <section className="products container section">
+    <section className="products container section" id="products">
         <div className="grey__area">
-            <div className="center__header">
-                <h2 className="section__title">Products</h2>
-            </div>
+                <h2 className="section__title product__title_animate">Products</h2>
             <h1 className="products__title">Featured Products</h1>
-            <div className="products__container">
+        </div>
+        <div id="spacer"></div>
+        <div className="clear__area">
+            <Swiper className="products__container"
+                    loop={true}
+                    grabCursor={true}
+                    spaceBetween={10}
+                    pagination={{
+                    clickable: true,
+                    }}
+                    breakpoints={{
+                    350: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 0
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 0
+                    },
+
+                    }}
+                    modules={[Pagination]}
+                >
                 {Data.map(({id, image, title, location})=> {
                     return (
-                        <div className="product__card" key={id}>
-                            <img src=0" alt="" />
-                        </div>
+                        <SwiperSlide className="product__card" key={id}>
+                            <img src={image} className="product__img" alt="" />
+                            <div className="product__detail">
+                                <h3 className="product__name">{title}</h3>
+                                <p className="product__location">{location}</p>
+                            </div>
+                        </SwiperSlide>
                     )
                 })}
-            </div>
+            </Swiper>
         </div>
+        <div id="spacer"></div>
     </section>
   )
 }

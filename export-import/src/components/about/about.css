@@ -1,3 +1,6 @@
+.about {
+    margin: 5rem 0;
+}
 .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -64,7 +67,9 @@
   }
   
   @media screen and (max-width: 576px){
-    
+    .about__img {
+        width: 100%;
+    }
   }
   
   /* For small devices */
