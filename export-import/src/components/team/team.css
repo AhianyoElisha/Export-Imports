@@ -40,6 +40,10 @@
     border: 1.2px solid var(--main-color);
 }
 
+
+.spec:hover {
+    color: var(--container-color);
+}
 .team__card {
     margin: auto;
     position: relative;

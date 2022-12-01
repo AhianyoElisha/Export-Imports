@@ -70,7 +70,7 @@ header {
     
 
     .nav {
-        height: var(--header-height);
+        height: 3.5rem;
     }
 
     .nav__menu {

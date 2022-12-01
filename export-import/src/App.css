@@ -3,14 +3,14 @@
 
 /* ====================== VARIABLES ======================== */
 :root {
-  --header-height: 3rem;
+  --header-height: 2rem;
 
   /* ====================== Colors ======================== */
   /* Color mode HSL(hue, saturation, lightness) */
   --hue: 0;
   --sat: 0%;
   --title-color:hsl(var(--hue), var(--sat), 10%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --title-color-dark: hsl(var(--hue), 70%, 70%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --main-color: hsl(var(--hue), 100%, 50%);
@@ -71,7 +71,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body, button, input, textarea {
@@ -106,6 +106,7 @@ button {
 /* ====================== REUSABLE CSS CLASSES ======================== */
 section {
   padding: 6rem 0 2rem;
+  overflow: hidden;
 }
 
 /* .center__header {

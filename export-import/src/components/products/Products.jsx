@@ -17,7 +17,7 @@ const Products = () => {
   return (
     <section className="products container section" id="products">
         <div className="grey__area">
-                <h2 className="section__title product__title_animate">Products</h2>
+                <h2 className="section__title">Products</h2>
             <h1 className="products__title">Featured Products</h1>
         </div>
         <div id="spacer"></div>
