@@ -16,9 +16,9 @@ function App() {
     const sr = ScrollReveal({
       origin: "top",
       distance: "60px",
-      duration: "1000",
+      duration: "900",
       delay: "300",
-      reset: true
+      // reset: true
     });
 
     // Home Section Animations
