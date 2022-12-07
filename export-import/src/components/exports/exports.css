@@ -76,6 +76,7 @@
     .export__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
+        padding: 5rem 0;
     }
     .export__data, .image__stack {
         margin: auto;

@@ -22,6 +22,7 @@ function App() {
     });
 
     // Home Section Animations
+    sr.reveal(`.home`, {reset: false})
     sr.reveal(`.home__scroll`, {origin: "bottom"})
     sr.reveal(`.home-in`, {interval: 100})
     sr.reveal(`.home__social`, {origin:"right", interval: 100})
