@@ -1,22 +1,40 @@
 .home {
-    background: url(../../assets/background.png);
+    background: url(../../assets/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
     position: relative;
+    min-height:100vh;
     top: 0;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-
-    
 }
+
 
 .home__title {
     color: var(--main-color);
     border-left: 9px solid var(--main-color);
     padding: 1.5rem 1.06rem;
     margin: 2rem 0;
+}
+
+.home__social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+}
+
+.home__social-icon {
+    font-size: 1.25rem;
+    color: var(--container-color);
+    padding: .1rem .4rem;
+    display: inline-flex;
+    border: 1px solid var(--container-color);
+    border-radius: 50%;
+}
+
+.home__social-icon:hover {
+    color: var(--title-color-dark);
+    border: 1px solid var(--title-color-dark);
+
 }
 
 .home__subtitle, .home__description {
@@ -30,13 +48,10 @@
     max-width: 270px;
 }
 
-.home__container {
-    height:90vh;
-}
-
 .home__content {
     align-items: center;
     padding-top: 5.5vh;
+    grid-template-columns: 1fr 70px;
 }
 
 .home__scroll-button {
@@ -48,6 +63,13 @@
 
 .wheel {
     animation: scroll 2s ease infinite;
+}
+
+.wave__shape {
+    position: absolute;
+    bottom: -1rem;
+    border: none;
+    outline: none;
 }
 
 @keyframes scroll {
@@ -97,5 +119,14 @@
 
 /* For small devices */
 @media screen and (max-width: 350px){
-
+    .home__content {
+        grid-template-columns: 1fr;
+    }
+    .home__social {
+        display: flex;
+        justify-content: center;
+    }
+    .home__social-icon {
+        margin: 1rem;
+    }
 }

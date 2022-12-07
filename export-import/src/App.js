@@ -18,22 +18,24 @@ function App() {
       distance: "60px",
       duration: "900",
       delay: "300",
-      // reset: true
+      reset: true,
     });
 
     // Home Section Animations
     sr.reveal(`.home__scroll`, {origin: "bottom"})
     sr.reveal(`.home-in`, {interval: 100})
+    sr.reveal(`.home__social`, {origin:"right", interval: 100})
+    
     
     
     // Export Page Animations
-    sr.reveal(`.export__data`, {origin:"right"})
-    sr.reveal(`.image__stack`, {origin: "left"})
+    sr.reveal(`.export__data`, {origin:"right",reset: false})
+    sr.reveal(`.image__stack`, {origin: "left", reset: false})
 
     // About Page Animations
     sr.reveal(`.about__title_animate`)
-    sr.reveal(`.about__img`, {origin:"right"})
-    sr.reveal(`.about__data`, {origin: "left"})
+    sr.reveal(`.about__img`, {origin:"right", reset: false})
+    sr.reveal(`.about__data`, {origin: "left", reset: false})
 
     //Product Section Animations
     // sr.reveal(`.product__title_animate`, {origin: "left"})
@@ -47,8 +49,8 @@ function App() {
     // Contact Section Animations
     sr.reveal(`.contact__title_animate`, {origin: "bottom"})
     // sr.reveal(`.contact__title`)
-    sr.reveal(`.contact__info`, {origin:"right"})
-    sr.reveal(`.contact__form`, {origin: "left"})
+    sr.reveal(`.contact__info`, {origin:"right",reset: false,})
+    sr.reveal(`.contact__form`, {origin: "left", reset: false,})
   }, []);
   return (
     <>

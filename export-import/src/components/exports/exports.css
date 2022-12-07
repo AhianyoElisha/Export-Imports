@@ -1,6 +1,6 @@
 .export__container {
     grid-template-columns: repeat(2,1fr);
-    padding: 5rem 0;
+    padding: 0 0 5rem 0;
 }
 
 .image__stack {
