@@ -115,6 +115,9 @@
     .export__label {
         width: inherit;
     }
+    .hero {
+        left: 0;
+    }
   }
   
   /* For small devices */

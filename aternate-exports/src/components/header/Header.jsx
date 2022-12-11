@@ -47,7 +47,7 @@ const Header = () => {
                 </li>
 
                 <li className="nav__item">
-                  <a href="#exports" className="nav__link" onClick={()=> showMenu(!Toggle)}>Mange Exports</a>
+                  <a href="#export" className="nav__link" onClick={()=> showMenu(!Toggle)}>Mange Exports</a>
                 </li>
                 
                 <li className="nav__item">
